@@ -1,0 +1,63 @@
+jemplo - clases - a2
+
+(Solución en Haga_Hasta y Para)
+
+Realizar una miniespecificación que permita ingresar 10 jugadores de baloncesto; por cada jugador se pide los datos: nombre del jugador, la cantidad de puntos que anotó en la temporada, la cantidad de faltas de la temporada. Generar el siguiente reporte
+-----------------------------------------------------------------------------------------------------------------------------
+//Haga_Hasta
+1.Inicio
+2. nombresJugador, x(200)[{1-9},{a-z},{A-Z}, {/}]
+3. contador, i[0,n] <-- 1
+4. cantidadPuntos, i[0,n]
+5. cantidadFaltas, i[0,n] 
+6. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}]
+7. cadenaFinal <-- ""
+8. Haga_Hasta  entonces
+9.      Escribir "Ingrese el nombre del jugador"
+10.      Leer nombresJugador                                                                                      // Antony4
+11.     Escribir "Ingrese de Cantidad de los puntos que anoto en la temporada"
+12.     Leer cantidadPuntos                                                                                        //70
+13.     Escribir "Ingrese las faltas  de la temporada"
+14.     Leer cantidadFaltas                                                                                        //10
+15.     cadenaFinal <-- cadenaFinal + nombresJugador + "\t" + cantidadPuntos + "\t" + cantidadFaltas + "\n"
+16.     contador <-- contador +1                                                                                  //4+1=5
+17. Fin Haga_Hasta(contador <= 10)                                                                                //5 <= 10
+18. Escribir cadenaFinal
+19. Fin
+//Pantalla
+//Antony	50		20
+//Antony2	60		40
+//Antony3	45		20
+//Antony4	70		10
+----------------------------------------------------------------------------------------------------------------
+//Para
+1.Inicio
+2. nombresJugador, x(200)[{1-9},{a-z},{A-Z}, {/}]
+3. contador, i[0,n]
+4. cantidadPuntos, i[0,n]
+5. cantidadFaltas, i[0,n] 
+6. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}]
+7. cadenaFinal <-- ""
+8. Para(contador<--1, contador <= 10, 1) haga                                                                       //,7)= 4+1=5
+9.      Escribir "Ingrese el nombre del jugador"
+10.      Leer nombresJugador                                                                                         // Antony4
+12.     Escribir "Ingrese de Cantidad de los puntos que anoto en la temporada"
+12.     Leer cantidadPuntos                                                                                         //70
+13.     Escribir "Ingrese las faltas  de la temporada"
+14.     Leer cantidadFaltas  //10
+15.     cadenaFinal <-- cadenaFinal + nombresJugador + "\t" + cantidadPuntos + "\t" + cantidadFaltas + "\n"
+16. Fin_Para
+17. Escribir cadenaFinal
+18. Fin
+//Pantalla:
+//Antony 	50	20
+//Antony2	60	40
+//Antony3	45	20
+//Antony4	70	10
+
+
+
+//cadenaFinal= Antony 	50	20
+//			   Antony2	60	40
+//			   Antony3	45	20
+//			   Antony4	70	10

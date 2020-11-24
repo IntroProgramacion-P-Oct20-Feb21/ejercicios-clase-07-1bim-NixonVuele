@@ -21,7 +21,7 @@
 11. Haga_Hasta
 12.    resultado <-- resultado * numero
 13.    contador <-- contador + 1
-14. Fin Haga_Hasta(contador <= potencia) 
-15. Escribir resultado
+14. Fin Haga_Hasta(contador <= potencia) // 4<=3 
+15. Escribir resultado //64
 16. Fin
 
